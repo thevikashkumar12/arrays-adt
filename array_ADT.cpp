@@ -28,6 +28,7 @@ public:
     void rightshift(); 
     void sortinsert(int w); 
     bool isSorted();
+    arrays merge(arrays arr);
 };
 arrays::arrays(int a){
     size=a;
@@ -206,6 +207,15 @@ void arrays::sortinsert(int w){
         cout << "The array is not sorted."<<endl;
     }
 }
+arrays arrays::merge(arrays arr){
+    if(isSorted()==1 && arr.isSorted()==1){
+        for(int i=0;i<nofi;i++){
+            if(p[i]> arr[i]){}
+        }
+    }
+
+}
+
 int main(){
     int size;
     srand(time(0));
